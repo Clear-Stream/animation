@@ -1,0 +1,44 @@
+@charset "utf-8";
+.container {
+  width: 200px;
+  height: 280px;
+  border: 1px solid #ccc;
+  perspective: 1000px;
+}
+
+.container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .6s all;
+  cursor: pointer;
+}
+
+.front, .back {
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  font-size: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  backface-visibility: hidden;
+  color: #fff;
+}
+
+.front {
+  transform: rotateY(0);
+  background: darkorange;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background: darkcyan;
+}
