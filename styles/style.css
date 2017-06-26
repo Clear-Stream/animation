@@ -44,7 +44,7 @@ nav ul li a::before {
 nav ul li a::after {
   content: attr(data-name);
   position: absolute;
-  top: -68px;
+  top: -44px;
   left: 50%;
   display: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -55,6 +55,7 @@ nav ul li a::after {
   background: rgba(0, 0, 0, .6);
   border-radius: 4px;
   transform: translateX(-50%);
+  min-width: 40px;
 }
 
 nav ul li a:hover::after, nav ul li a:hover::before {
