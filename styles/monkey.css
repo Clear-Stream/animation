@@ -42,9 +42,6 @@
   position: absolute;
 }
 
-.spacer:hover {
-  animation-play-state: paused;
-}
 
 .forest {
   width: 100%;
